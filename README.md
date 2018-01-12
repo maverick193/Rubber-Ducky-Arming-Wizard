@@ -31,13 +31,21 @@ Always execute the RDAS in the root of Rubber Ducky :
 OR
 - You can also execute it directly from github without cloning it :
 ```shell
-source <(curl -s https://raw.githubusercontent.com/maverick193/Rubber-Ducky-Arming-Wizard/master/rd-arming-wizard.sh)
+$ source <(curl -s https://raw.githubusercontent.com/maverick193/Rubber-Ducky-Arming-Wizard/master/rd-arming-wizard.sh)
 ```
 and follow the duck
 
 #### Folder structure
+- rd-aming.sh (RDAS) : the Rubber Ducky Arming Script
+- RD/tools/encoder : folder which contains the java and python encoders
+- RD/payloads/Linux, RD/payloads/Windows & RD/payloads/OSX : folders by targeted OS where we'll install payloads
 
 #### Installing/Creating your payloads
+If you want to install or create your own payload, do as follow so the RDAS can load and arm it :
+- Create a folder in RD/payloads/[Your_Target_OS]/ with the name of your payload.
+- Inside this folder create your Ducky Script and name it payload.txt
+- In the same folder, create a .info.txt (hidden file) which contains information about your payload (author, description, version, etc ...). This file will be read when you choose to display the current armed payload
+- If your payload needs other files (executable, scripts, etc ...), create (in the same folder) a new folder called extras and put those extra files, RDAS will copy them in RubberDucky root folder when your'll arm your payload (and delete them when you arm another one)
 
 #### Usage
 
@@ -45,6 +53,9 @@ and follow the duck
 If you have any issues with this extension, please open an issue on Github.
 
 Any contributions are highly appreciated. If you want to contribute, please open [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
+
+## Credits
+hak5darren && kevthehermit
 
 ## License
 License   : [OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php).
