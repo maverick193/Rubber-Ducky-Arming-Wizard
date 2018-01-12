@@ -21,8 +21,8 @@ On a fresh Rubber SD Card, this wizard will do the following :
 | OS            | Status        |
 | ------------- |:-------------:|
 | Linux         | stable        |
-| Windows       | @todo         |
 | OSx           | @todo         |
+| Windows       | @NopeNotMe    |
 
 ## Installation & Usage
 #### Installation
