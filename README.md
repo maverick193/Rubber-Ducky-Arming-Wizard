@@ -48,6 +48,10 @@ If you want to install or create your own payload, do as follow so the RDAS can 
 - If your payload needs other files (executable, scripts, etc ...), create (in the same folder) a new folder called extras and put those extra files, RDAS will copy them in RubberDucky root folder when your'll arm your payload (and delete them when you arm another one)
 
 #### Usage
+```shell
+$ bash rd-arming.sh
+```
+and follow the <img width="60" height="50" src="https://user-images.githubusercontent.com/1863000/34887445-d79e1af4-f7c6-11e7-890e-116b92d68fae.png">
 
 ## Support and Contribution
 If you have any issues with this extension, please open an issue on Github.
@@ -55,7 +59,7 @@ If you have any issues with this extension, please open an issue on Github.
 Any contributions are highly appreciated. If you want to contribute, please open [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
 ## Credits
-hak5darren && kevthehermit
+[hak5darren](https://github.com/hak5darren/USB-Rubber-Ducky) && [kevthehermit](https://github.com/kevthehermit/DuckToolkit)
 
 ## License
 License   : [OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php).
