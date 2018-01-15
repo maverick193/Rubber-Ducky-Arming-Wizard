@@ -44,7 +44,7 @@ and follow the duck
 If you want to install or create your own payload, do as follow so the RDAS can load and arm it :
 - Create a folder in RD/payloads/[Your_Target_OS]/ with the name of your payload.
 - Inside this folder create your Ducky Script and name it payload.txt
-- In the same folder, create a .info.txt (hidden file) which contains information about your payload (author, description, version, etc ...). This file will be read when you choose to display the current armed payload
+- In the same folder, create a info.txt which contains information about your payload (author, description, version, etc ...). This file will be read when you choose to display the current armed payload
 - If your payload needs other files (executable, scripts, etc ...), create (in the same folder) a new folder called extras and put those extra files, RDAS will copy them in RubberDucky root folder when your'll arm your payload (and delete them when you arm another one)
 
 #### Usage
