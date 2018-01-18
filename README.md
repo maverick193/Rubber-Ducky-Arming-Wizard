@@ -1,7 +1,7 @@
 # Rubber-Ducky-Arming-Wizard (RDAS Wizard)
-Rubber Ducky arming script wizard : quickly setup your Rubber Ducky 
+Setup and arm your Rubber Ducky in couple of seconds
 
-Rubber Ducky Arming Script (RDAS) is an interactive script, it allows you to quickly arm your Ducky with payloads just by answering questions from the menu. No need to create manually your inject.bin, RDAS does it all.
+Rubber Ducky Arming Script (RDAS) is an interactive script, which allows you to quickly arm your Ducky with payloads just by answering questions from the menu. No need to create manually your inject.bin, RDAS does it all.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/1863000/34879289-072ffc98-f7ad-11e7-8202-7123108c5286.png" alt="Rubber Ducky Arming Wizard">
@@ -14,8 +14,8 @@ On a fresh Rubber SD Card, this wizard will do the following :
 - Ask to backup previous version (if it exists)
 - Cleanup previous version
 - Create folder structure
-- Download java encoder (hak5darren duckencoder.jar) and python encoder (clone kevthehermit DuckToolkit)
-- Install RDAS
+- Download java encoder (hak5darren [duckencoder.jar](https://github.com/hak5darren/USB-Rubber-Ducky)) and python encoder (clone kevthehermit [DuckToolkit](https://github.com/kevthehermit/DuckToolkit))
+- Install RDAS (Rubber Ducky Arming Script)
 
 ## OS compatibility
 | OS            | Status        |
@@ -26,8 +26,9 @@ On a fresh Rubber SD Card, this wizard will do the following :
 
 ## Installation & Usage
 #### Installation
-Always execute the RDAS in the root of Rubber Ducky :
-- Clone this repo, move the rd-arming-wizard to Root of your Rubber Ducky and execute it.
+Always execute the RDAS in the root of Rubber Ducky either by :
+- Cloning this repo, move the rd-arming-wizard to Root of your Rubber Ducky and execute it.
+
 OR
 - You can also execute it directly from github without cloning it :
 ```shell
@@ -36,9 +37,24 @@ $ source <(curl -s https://raw.githubusercontent.com/maverick193/Rubber-Ducky-Ar
 and follow the duck
 
 #### Folder structure
-- rd-aming.sh (RDAS) : the Rubber Ducky Arming Script
-- RD/tools/encoder : folder which contains the java and python encoders
-- RD/payloads/Linux, RD/payloads/Windows & RD/payloads/OSX : folders by targeted OS where we'll install payloads
+```
+.
++-- rd-arming.sh (RDAS) : the Rubber Ducky Arming Script
++-- RD
+|   +-- tools
+|       +-- encoder
+|           +-- java
+|           +-- python
+|   +-- payloads
+|       +-- Linux 
+|       +-- Windows
+|       +-- OSX
+```
+- **rd-aming.sh (RDAS) :** the Rubber Ducky Arming Script
+- **RD/tools/encoder :** folder which contains the java and python encoders
+- **RD/payloads/Linux :** your payloads that work on Linux victim machine
+- **RD/payloads/Windows:** your payloads that worked on Windows victim machine
+- **RD/payloads/OSX** your payloads that worked on OSX victim machine
 
 #### Installing/Creating your payloads
 If you want to install or create your own payload, do as follow so the RDAS can load and arm it :
